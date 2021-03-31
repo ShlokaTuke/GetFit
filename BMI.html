@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<style>
+*{
+padding:0;
+margin:0;
+outline:none;
+box-sizing:border-box;
+font-family:helvetica;
+}
+#top{
+	position:fixed;
+	width:100%;
+	z-index:2;
+}
+#header{
+	overflow:hidden;
+	width:100%;
+	height:40px;
+	background:#FFA804;
+}
+.head{
+	float:left;
+	font-size:20px;
+	color:black;
+}
+.register3{
+		display:flex;
+		justify-content:flex-end;
+		padding:10px;
+		}
+	.reg3 a{
+		font-weight:700;
+		color:black;
+		padding:10px;
+		text-decoration:none;
+		letter-spacing:3px;
+		}
+	.reg3 a:hover{
+		background-color:black;
+		color:#f64f59;
+	}
+#navi{
+	background-color: black;
+	width:100%;
+	height:35px;
+	}
+.navigation ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	}
+.navigation ul li{
+	width:120px;
+	height:35px;
+	text-align:center;
+	line-height:35px;
+	display:inline-block;
+	position:relative;
+	}
+.navigation ul li a{
+	text-decoration:none;
+	display:block;
+	color:white;
+	font-weight:700;
+}
+.navigation ul li a:hover{
+	background-color:black;
+	color:#fcb045;
+}
+.navigation ul ul{
+	display:none;
+	position:absolute;
+}
+.navigation ul ul li{
+	background:black;
+}
+.navigation ul li:hover>ul{
+	display:block;
+}
+.toggle{
+	width:100%;
+	padding:10px 20px;
+	text-align:right;
+	box-sizing:border-box;
+	display:none;
+	color:white;
+	}
+#back{
+background-image:url("images/bmi.jpg");
+background-attachment:fixed;
+background-repeat:no-repeat;
+text-align:center;
+width:100%;
+position:relative;
+height:500px;
+background-position:center -10px;
+padding:20px;
+}
+#hea{
+color:white;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-weight:bold;
+font-size:45px;
+}
+#between{
+background:#1C1A1A;
+color:white;
+padding:50px;
+font-size:20px;
+}
+.calc{
+padding:10px;
+}
+#myform .calc input[type="text"]{
+padding:10px;
+margin:10px;
+max-width:100px
+width:50%;
+}
+#myform select{
+padding:10px;
+max-width:140px;
+width:40%;
+position:relative;
+bottom:10px;
+margin-left:10px;
+}
+#height, #weight{
+float:left;
+}
+.calc #btn{
+padding:10px;
+position:relative;
+top:40px;
+right:418px;
+}
+.btn input[type="submit"]{
+padding:15px;
+border:3px solid #FFA804;
+background:#1C1A1A;
+border-radius:30px;
+color:#FFA804;
+font-weight:bold;
+font-size:15px;
+}
+.btn input[type="submit"]:hover{
+background:#FFA804;
+color:white;
+}
+#myform p{
+font-size:20px;
+text-align:justify;
+margin-top:0px;
+line-height:30px;
+}
+.footer{
+	text-align: center;
+	padding: 10px;
+	background-color:#ffa804;
+	color:black;
+	font-size:15px;
+	font-weight:700;
+}
+@media screen and (max-width:450px)
+{
+	.toggle{
+		display:block;
+	}
+	ul {
+		width:40%;
+		display:none;
+		background:black;
+		color:white;
+		float:right;
+	}
+	.navigation ul li{
+		display:inline;
+		}
+	.navigation ul ul li{
+		text-align:center;
+			display:block;
+			z-index:1;
+	}
+
+	.active{
+		display:block;
+	}
+	.reg3{display: none;}
+	.calc #btn{
+	padding:10px;
+	position:relative;
+	top:20px;
+	right:-60px;
+	}
+}
+@media screen and (max-width:720px)
+{
+	{
+		.toggle{
+			display:block;
+		}
+		ul {
+			width:40%;
+			display:none;
+			background:black;
+			color:white;
+			float:right;
+		}
+		.navigation ul li{
+			display:inline;
+			}
+		.navigation ul ul li{
+			text-align:center;
+				display:block;
+				z-index:1;
+		}
+
+		.active{
+			display:block;
+		}
+	#header{
+		background:#ffa804;
+	}
+	.body{
+		width:100%;
+	}
+	.reg3{
+		display: none;
+	}
+}
+</style>
+</head>
+<body>
+<div id="top">
+<div id="header">
+<div class="head"><img src="images/yoga.png" style="height:30px" "width:30px"><b><i>FITNESS-Get strong today</i></b></div>
+<div class="register3">
+<div class="reg3"><a href="register.html">REGISTER</a></div>
+</div>
+</div>
+
+<div id="navi">
+<div class="navigation">
+<div class="toggle">
+<i class="fa fa-bars menu" aria-hidden="true"></i>
+</div>
+<ul>
+<li><a href="tricks.html">Home</a></li>
+<li><a href="##">Trainer's</a>
+<ul>
+<li><a href="#last">Abdul Rehman</a></li>
+<li><a href="#last">Neekshit Desai</a></li>
+</ul>
+</li>
+<li><a href="##">Classes</a>
+<ul>
+<li><a href="insanity.html">Insanity</a></li>
+<li><a href="crossfit.html">Crossfit</a></li>
+<li><a href="functional.html">Functional</a></li>
+<li><a href="zumba.html">Zumba</a></li>
+<li><a href="pilates.html">Pilates</a></li>
+</ul>
+</li>
+<li><a href="##">Gallery</a></li>
+<li><a href="#contact">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('.menu').click(function(){
+$('ul').toggleClass('active');
+})
+})
+</script>
+</div>
+<div id="full">
+<div id="back">
+<h1 id="hea">HOW FIT<span style="color:#FFA804"> ARE YOU?</span></h1>
+</div>
+<div id="between">
+<p>The body mass index (BMI) is a value derived from the mass (weight) and height of an individual and is defined as the body mass divided by the square of the body height.The BMI is an attempt to quantify the amount of tissue mass (muscle, fat, and bone) in an individual, and then categorize that person as underweight, normal weight, overweight, or obese based on that value.</br>
+
+Commonly accepted BMI ranges are:</br></br></br>
+underweight: under 18.5</br>
+normal weight: 18.5 to 25</br>
+overweight: 25 to 30</br>
+obese: over 30</br></br>
+*Make sure to enter your height in inches/ meters. (Eg: 5'3" is 5.3 x 12 = 63.6 inches).</p>
+
+<form id="myform">
+<div class="calc">
+   <input type="text" placeholder="Enter your height in cm" id="height">
+   <input type="text" placeholder="Enter your weight in kg" id="weight"><br />
+   <button id="btn" onclick="calculate()">CALCULATE</button>
+</div>
+</form>
+</div>
+
+</div>
+<div class="footer">
+<div class="copy">By Shloka Tuke, &copy; 2020 All rights reserved.</div>
+</div>
+
+<script type="text/javascript">
+
+function calculate(){
+var height=document.getElementById("height").value;
+var weight=document.getElementById("weight").value;
+var BMI=weight/(height/100*height/100)
+var bmio=(BMI.toFixed(2));
+alert("Your BMI is"+" "+bmio);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+*{
+padding:0;
+margin:0;
+outline:none;
+box-sizing:border-box;
+font-family:helvetica;
+}
+#top{
+	position:fixed;
+	width:100%;
+	z-index:2;
+}
+#header{
+	overflow:hidden;
+	width:100%;
+	height:40px;
+	background:#FFA804;
+}
+.head{
+	float:left;
+	font-size:20px;
+	color:black;
+}
+.register3{
+		display:flex;
+		justify-content:flex-end;
+		padding:10px;
+		}
+	.reg3 a{
+		font-weight:700;
+		color:black;
+		padding:10px;
+		text-decoration:none;
+		letter-spacing:3px;
+		}
+	.reg3 a:hover{
+		background-color:black;
+		color:#f64f59;
+	}
+#navi{
+	background:black;
+	width:100%;
+	height:35px;
+	}
+.navigation ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	}
+.navigation ul li{
+	width:120px;
+	height:35px;
+	text-align:center;
+	line-height:35px;
+	display:inline-block;
+	position:relative;
+	}
+.navigation ul li a{
+	text-decoration:none;
+	display:block;
+	color:white;
+	font-weight:700;
+}
+.navigation ul li a:hover{
+	background-color:black;
+	color:white;
+}
+.navigation ul ul{
+	display:none;
+	position:absolute;
+}
+.navigation ul ul li{
+	background:black;
+}
+.navigation ul li:hover>ul{
+	display:block;
+}
+.toggle{
+	width:100%;
+	padding:10px 20px;
+	text-align:right;
+	box-sizing:border-box;
+	display:none;
+	color:white;
+	}
+.cont{
+background:#1C1A1A;
+}
+.cont h1{
+color:#ffa804;
+font-size:30px;
+text-align:center;
+padding:95px 0 25px 0;
+letter-spacing:5px;
+font-weight:800;
+}
+.cont p{
+color:white;
+font-size:20px;
+font-weight:500;
+margin:0 60px 0 60px;
+}
+.join{
+text-align:center;
+padding:20px;
+margin-top:20px;
+}
+.join a{
+text-decoration:none;
+color:white;
+letter-spacing:5px;
+border:2px solid white;
+border-radius:30px;
+font-weight:bold;
+background:#ffa804;
+padding:20px;
+margin-bottom:25px;
+font-size:20px;
+}
+.join a:hover{
+background:white;
+color:#ffa804;
+}
+.pics{
+display:flex;
+justify-content:space-around;
+flex-flow:wrap;
+padding-bottom:40px;
+margin-top:40px;
+}
+.footer{
+	text-align: center;
+	padding: 10px;
+	background-color:#ffa804;
+	color:black;
+	font-size:15px;
+	font-weight:700;
+}
+	@media screen and (max-width:450px)
+	{
+		.toggle{
+			display:block;
+		}
+		ul {
+			width:40%;
+			float:right;
+			display:none;
+			background:black;
+		}
+		.navigation ul li{
+			display:inline;
+			}
+		.navigation ul ul li{
+			text-align:center;
+		    display:block;
+		    z-index:1;
+		}
+
+		.active{
+			display:block;
+		}
+		.reg3{display:none;}
+	}
+	@media screen and (max-width:720px)
+	{
+		.toggle{
+			display:block;
+		}
+		ul {
+			width:40%;
+			float:right;
+			display:none;
+			background:black;
+		}
+		.navigation ul li{
+			display:inline;
+			}
+		.navigation ul ul li{
+			text-align:center;
+		    display:block;
+		    z-index:1;
+		}
+
+		.active{
+			display:block;
+		}
+		#header{
+			background:#ffa804;
+		}
+		.body{
+			width:100%;
+		}
+	}
+</style>
+</head>
+<body>
+<div id="top">
+<div id="header">
+<div class="head"><img src="images/yoga.png" style="height:30px" "width:30px"><b><i>FITNESS-Get strong today</i></b></div>
+<div class="register3">
+<div class="reg3"><a href="register.html">REGISTER</a></div>
+</div>
+</div>
+
+<div id="navi">
+<div class="navigation">
+<div class="toggle">
+<i class="fa fa-bars menu" aria-hidden="true"></i>
+</div>
+<ul>
+<li><a href="tricks.html">Home</a></li>
+<li><a href="##">Trainer's</a>
+<ul>
+<li><a href="#last">Abdul Rehman</a></li>
+<li><a href="#last">Neekshit Desai</a></li>
+</ul>
+</li>
+<li><a href="##">Classes</a>
+<ul>
+<li><a href="insanity.html">Insanity</a></li>
+<li><a href="crossfit.html">Crossfit</a></li>
+<li><a href="functional.html">Functional</a></li>
+<li><a href="zumba.html">Zumba</a></li>
+</ul>
+</li>
+<li><a href="##">Gallery</a></li>
+<li><a href="#contact">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('.menu').click(function(){
+$('ul').toggleClass('active');
+})
+})
+</script>
+</div>
+
+<div class="cont">
+<h1>ZUMBA</h1>
+<p>Zumba involves dance and aerobic movements performed to energetic music. The choreography incorporates hip- hop, soca, samba, Salsa, merengue and mambo along with squats. Zumba offers different options and is safe for all ages.</br></br></br>
+CrossFit challenges the world's fittest and has universal scalability, making it perfect for any committed individual, regardless of experience.</br></br></br>
+
+<span style="color:#ffa804;font-weight:bold">Calorie Burnt:</span> Between 500 to 1000 calories per hour.</br></br></br>
+
+<span style="color:#ffa804;font-weight:bold">Target Areas:</span> Legs, Arms, Glutes, Core & Back.</br></br></br>
+
+We conduct hour long sessions led by Mrs.Simran Makhija, founder and trainer at Fitness Freak, to music that from various dance styles such as cumbia, salsa, merengue, mambo, flamenco, chachacha, reggaeton, soca, samba, hip-hop, axé music and tango.</br></br></br>
+</p>
+
+<div class="join">
+<a href="join.html">JOIN ZUMBA</a>
+</div>
+
+<div class="pics">
+<div class="pic1"><img src="images/pic13.jpg" width="300px"></div>
+<div class="pic1"><img src="images/pic14.jpg" width="300px"></div>
+<div class="pic1"><img src="images/pic15.jpg" width="300px"></div>
+<div class="pic1"><img src="images/pic16.jpg" width="300px"></div>
+</div>
+</div>
+<div class="footer">
+<div class="copy">By Shloka Tuke, &copy; 2020 All rights reserved.</div>
+</div>
